@@ -2,6 +2,8 @@
 <p><%= @article.body %></p>
 <%= render partial: 'articles/comment', collection: @article.comments.reverse %>
 <br/>
+<%= render partial: 'comments/form' %>
+<br/>
 <%= link_to "<< Back to Articles List", articles_path %>
 <br/>
 <%= link_to "Edit", edit_article_path(@article) %>
