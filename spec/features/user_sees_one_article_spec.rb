@@ -33,7 +33,7 @@ describe 'user sees one article' do
       expect(current_path).to eq(article_path(article))
       expect(page).to have_content("Post a Comment")
       expect(page).to have_content('ME!')
-      expect(page).to have_content('So many thought on this article.')
+      expect(page).to have_content('So many thoughts on this article.')
     end
   end
 end
